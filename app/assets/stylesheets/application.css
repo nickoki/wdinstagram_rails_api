@@ -68,7 +68,12 @@
    flex-direction: column;
    margin: 1em 0;
    border: 1px solid #ddd;
+   width: 600px;
    background-color: #fff;
+ }
+
+ .show {
+   width: 900px !important;
  }
 
  .post img {
@@ -86,7 +91,9 @@
  }
 
  .caption {
+   box-sizing: border-box;
    padding: 1em;
+   width: inherit;
  }
 
  form {
