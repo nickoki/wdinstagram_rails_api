@@ -62,7 +62,7 @@
 
   // Factory Function
   function InstaFactoryFunction($resource) {
-    return $resource("https://wdinstagram-api.herokuapp.com/#/entries/:id", {}, {
+    return $resource("https://wdinstagram-api.herokuapp.com/entries/:id", {}, {
       update: { method: "PUT" },
       destroy: { method: "DELETE" }
     })
