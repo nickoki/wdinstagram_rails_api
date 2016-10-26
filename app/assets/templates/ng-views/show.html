@@ -1,0 +1,11 @@
+<div class="post show">
+  <div class="author">{{vm.post.author}}</div>
+  <img ng-src="{{vm.post.photo_url}}" class="show-img" />
+
+  <div class="caption">{{vm.post.body}}</div>
+</div>
+
+<div class="options">
+  <a data-ui-sref="instaEdit({id: vm.post.id})">Edit</a>
+  <a data-ng-click="vm.destroy()">Delete</a>
+</div>

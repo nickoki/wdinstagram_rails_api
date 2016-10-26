@@ -1,0 +1,5 @@
+<div data-ng-repeat="post in vm.posts | orderBy: '-created_at'" class="post">
+  <a class="author" data-ui-sref="grumbleShow({id: post.id})">{{post.author}}</a>
+  <a data-ui-sref="instaShow({id: post.id})"><img ng-src="{{post.photo_url}}" class="index-img" /></a>
+  <div class="caption">{{post.body}}</div>
+</div>

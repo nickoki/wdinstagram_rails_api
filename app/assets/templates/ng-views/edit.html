@@ -1,0 +1,11 @@
+<h2>Edit Post</h2>
+
+<div class="edit">
+  <form>
+    <input placeholder="Image URL" type="text" data-ng-model="vm.post.photo_url" value="vm.post.photo_url" />
+    <input placeholder="Author Name" type="text" data-ng-model="vm.post.author" value="vm.post.author" />
+    <textarea placeholder="Body" type="text" data-ng-model="vm.post.body" value="vm.post.body"></textarea>
+    <button type="button" data-ng-click="vm.update()">Submit</button>
+    <button type="button" data-ui-sref="instaShow({id: vm.post.id})">Cancel</button>
+  </form>
+</div>
